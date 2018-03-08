@@ -42,6 +42,7 @@ def dl_images(url):
     
 
 #给定爬取页数
-for url in get_image_url(2):
+img_urls = get_image_url(2)
+for url in img_urls:
     dl_images(url)
     

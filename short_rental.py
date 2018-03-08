@@ -17,9 +17,9 @@ grade = #reviews > div > div > div > div > div._xofrn3w > div > div > div > span
 '''
 from bs4 import BeautifulSoup
 import requests
-
 url = "https://zh.airbnb.com/rooms/9040671?location=%E5%8C%97%E4%BA%AC%2C%20%E4%B8%AD%E5%9B%BD&s=KCVbsR4A"
 urls = ["http://bj.xiaozhu.com/search-duanzufang-p{}-0/".format(str(i)) for i in range(1,5)]
+
 def crawl_single(url):
     web_data = requests.get(url)
     code = requests.get(url).status_code
